@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Brook framework: BrookSession: Class TBrookSession</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Brook framework</h2><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div></p></td><td class="content">
+<a name="TBrookSession"></a><h1 class="cio">Class TBrookSession</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookSession.html">BrookSession</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookSession = class(<a class="normal" href="BrookClasses.TBrookComponent.html">TBrookComponent</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Defines features to the section handling.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal" href="BrookClasses.TBrookComponent.html">TBrookComponent</a></li>
+<li class="thisitem">TBrookSession</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookSession.TBrookSession.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="BrookSession.TBrookSession.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookSession.TBrookSession.html#GetFields">GetFields</a></b>(AObject: TObject);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookSession.TBrookSession.html#IsExpired">IsExpired</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookSession.TBrookSession.html#IsEmpty">IsEmpty</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookSession.TBrookSession.html#GenerateID">GenerateID</a></b>: string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookSession.TBrookSession.html#Start">Start</a></b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookSession.TBrookSession.html#Finish">Finish</a></b>(AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookSession.TBrookSession.html#Expire">Expire</a></b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookSession.TBrookSession.html#Exists">Exists</a></b>(const AName: string): Boolean;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#CookieName">CookieName</a></b>: string read FCookieName write FCookieName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#CookieDomain">CookieDomain</a></b>: string read FCookieDomain write FCookieDomain;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#CookiePath">CookiePath</a></b>: string read FCookiePath write FCookiePath;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#CookieSecure">CookieSecure</a></b>: Boolean read FCookieSecure write FCookieSecure;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#CookieExpires">CookieExpires</a></b>: TDateTime read FCookieExpires write FCookieExpires;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#Fields">Fields</a></b>: TStrings read FFields;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#Directory">Directory</a></b>: string read FDirectory write FDirectory;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#Expired">Expired</a></b>: Boolean read <a  href="BrookSession.TBrookSession.html#IsExpired">IsExpired</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#Empty">Empty</a></b>: Boolean read <a  href="BrookSession.TBrookSession.html#IsEmpty">IsEmpty</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#SID">SID</a></b>: string read FSID write FSID;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#Started">Started</a></b>: Boolean read IsStarted;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#FileName">FileName</a></b>: TFileName read FFileName write FFileName;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#FilePrefix">FilePrefix</a></b>: ShortString read FFilePrefix write FFilePrefix;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#TimeOut">TimeOut</a></b>: Integer read FTimeOut write FTimeOut;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookSession.TBrookSession.html#HttpOnly">HttpOnly</a></b>: Boolean read FHttpOnly write FHttpOnly;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of a <a class="normal" href="BrookSession.TBrookSession.html">TBrookSession</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Frees an instance of <a class="normal" href="BrookSession.TBrookSession.html">TBrookSession</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetFields"></a><code>procedure <b>GetFields</b>(AObject: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get an object with the fields coming from session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsExpired"></a><code>function <b>IsExpired</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns <code>True</code> if the session has expired.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsEmpty"></a><code>function <b>IsEmpty</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns <code>True</code> if the session fieds is empty.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GenerateID"></a><code>function <b>GenerateID</b>: string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an ID for the session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Start"></a><code>procedure <b>Start</b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Starts the session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Finish"></a><code>procedure <b>Finish</b>(AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Terminates the session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Expire"></a><code>procedure <b>Expire</b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Expires the session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Exists"></a><code>function <b>Exists</b>(const AName: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if a name exists in fields.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CookieName"></a><code>property <b>CookieName</b>: string read FCookieName write FCookieName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the session cookie name.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CookieDomain"></a><code>property <b>CookieDomain</b>: string read FCookieDomain write FCookieDomain;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the session cookie domain.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CookiePath"></a><code>property <b>CookiePath</b>: string read FCookiePath write FCookiePath;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the session cookie path.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CookieSecure"></a><code>property <b>CookieSecure</b>: Boolean read FCookieSecure write FCookieSecure;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the session cookie secure.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CookieExpires"></a><code>property <b>CookieExpires</b>: TDateTime read FCookieExpires write FCookieExpires;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the session cookie expiration.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Fields"></a><code>property <b>Fields</b>: TStrings read FFields;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The session fields.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Directory"></a><code>property <b>Directory</b>: string read FDirectory write FDirectory;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the name of session directory.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Expired"></a><code>property <b>Expired</b>: Boolean read <a  href="BrookSession.TBrookSession.html#IsExpired">IsExpired</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns <code>True</code> if the session has expired.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Empty"></a><code>property <b>Empty</b>: Boolean read <a  href="BrookSession.TBrookSession.html#IsEmpty">IsEmpty</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns <code>True</code> if the session fieds is empty.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SID"></a><code>property <b>SID</b>: string read FSID write FSID;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get or set the session ID.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Started"></a><code>property <b>Started</b>: Boolean read IsStarted;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if the session has started.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FileName"></a><code>property <b>FileName</b>: TFileName read FFileName write FFileName;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The session file name.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FilePrefix"></a><code>property <b>FilePrefix</b>: ShortString read FFilePrefix write FFilePrefix;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The session file prefix.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TimeOut"></a><code>property <b>TimeOut</b>: Integer read FTimeOut write FTimeOut;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The remaining seconds for the session finish.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HttpOnly"></a><code>property <b>HttpOnly</b>: Boolean read FHttpOnly write FHttpOnly;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Informs if the session cookie is accessible only by HTTP requests, if <code>True</code>, the JavaScript access is not allowed.</p>
+</td></tr>
+</table>
+</td></tr></table></body></html>
